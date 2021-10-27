@@ -1,0 +1,44 @@
+name: Plugin
+version: ${project.version}
+main: de.plugin.Plugin
+api-version: 1.16
+authors: [ Joel ]
+description: Mein zweites Plugin
+load: STARTUP
+
+commands:
+  settings:
+    description: Hier kanntst du dein Game einstellen.
+  gms:
+    description: Dieser Befehl ändert deinen Gamemode.
+    aliases: ["gmc", "gma", "gmss"]
+  multiv:
+    description: Dieser Befehl erstellt neue Welten.
+    aliases: ["mtv"]
+  pex:
+    description: Use this Command to give Players Permissions with Ranks.
+  wartung:
+    description: Use this Command to set you Server to Wartung.
+  reset:
+    description: Use it only one try
+
+
+permissions:
+  plugin.permissionsCommand.add:
+    default: op
+  de.plugin.setting.command:
+    default: op
+  de.plugin.setportal:
+    default: op
+  de.plugin.gamemode:
+    description: Dieser Befehl ändert deinen Gamemode.
+    default: op
+  de.plugin.multiverse:
+    description: Hiermit kannst du mehrere Welten erstellen.
+    default: op
+  de.plugin.setportalspawn:
+    description: setzt den Portal Spawn
+    default: op
+  plugin.setconfig.config:
+    description: Mit diesem Command können sie eine Config bearbeiten.
+    default: op
